@@ -1,5 +1,3 @@
-hey this is my project readMe file discription can you conver this into markdown code so i can pet that in to readme file 
-
 # Reaction Role Bot
 
 A powerful Discord bot that automatically assigns roles to users based on emoji reactions on messages.
