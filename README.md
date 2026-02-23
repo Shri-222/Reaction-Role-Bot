@@ -70,9 +70,9 @@ Go to your Discord server → Server Settings → Roles → Create Role
 ```
 
 ##### Breaking Down the Command
-MESSAGE_ID - The ID of the message where users will react
-EMOJI - The emoji users will click (e.g., 🎮, 🎨, 🎵)
-@RoleName - The role to assign (mention it with @)
+   - MESSAGE_ID - The ID of the message where users will react
+   - EMOJI - The emoji users will click (e.g., 🎮, 🎨, 🎵)
+   - @RoleName - The role to assign (mention it with @)
 
 ##### How It Works for Users
    - User sees the message with the emoji
