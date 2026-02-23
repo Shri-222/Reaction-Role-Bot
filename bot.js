@@ -3,7 +3,8 @@ const { QuickDB } = require("quick.db");
 require('dotenv').config();
 
 const db = new QuickDB();
-const PREFIX = "!";
+
+const PREFIX = process.env.PREFIX;
 
 const client = new Client({
     intents: [
