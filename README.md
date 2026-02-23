@@ -19,7 +19,6 @@ A powerful Discord bot that automatically assigns roles to users based on emoji 
 - Node.js v16 or higher
 - npm or yarn
 - A Discord bot token
-- A database (Replit DB, MongoDB, etc.)
 
 ### Step 1: Clone the Repository
 
@@ -36,7 +35,6 @@ npm install discord.js dotenv quick.db better-sqlite3
 ### Step 3: Create a .env File
 ```bash
 DISCORD\_TOKEN=your\_bot\_token\_here
-DATABASE\_URL=your\_database\_url\_here
 ```
 
 ### Step 4: Start the Bot
@@ -52,14 +50,14 @@ node index.js
    - Copy the generated URL and open it in your browser
 
 #### 2. Enable Gateway Intents
-    - Go to your bot in Discord Developer Portal
-    - Click Bot
-    - Enable these intents:
-    - ✓ Server Members Intent
-    - ✓ Message Content Intent
+   - Go to your bot in Discord Developer Portal
+   - Click Bot
+   - Enable these intents:
+   - ✓ Server Members Intent
+   - ✓ Message Content Intent
 
 #### 3. Create a Role (if you don't have one)
-    Go to your Discord server → Server Settings → Roles → Create Role
+Go to your Discord server → Server Settings → Roles → Create Role
 
 #### 4. Use the Setup Command
 ##### Send this command in your Discord server (replace with your details):
@@ -72,15 +70,15 @@ node index.js
 ```
 
 ##### Breaking Down the Command
-[MESSAGE_ID] - The ID of the message where users will react
-[EMOJI] - The emoji users will click (e.g., 🎮, 🎨, 🎵)
+MESSAGE_ID - The ID of the message where users will react
+EMOJI - The emoji users will click (e.g., 🎮, 🎨, 🎵)
 @RoleName - The role to assign (mention it with @)
 
 ##### How It Works for Users
-    - User sees the message with the emoji
-    - User clicks/reacts with the emoji
-    - Bot automatically assigns the role to the user
-    - User can remove the reaction to get the role removed
+   - User sees the message with the emoji
+   - User clicks/reacts with the emoji
+   - Bot automatically assigns the role to the user
+   - User can remove the reaction to get the role removed
 
 ### Configuration
 Edit the PREFIX in your .env file to change the command prefix (default is !).
@@ -88,19 +86,19 @@ Edit the PREFIX in your .env file to change the command prefix (default is !).
 ### Troubleshooting
 
 #### Bot can't find the role
-    - Make sure the role exists in your server
-    - Make sure you're using @RoleName or the role ID
-    - Check that the bot has permission to manage roles
+   - Make sure the role exists in your server
+   - Make sure you're using @RoleName or the role ID
+   - Check that the bot has permission to manage roles
 
 #### Bot doesn't respond to commands
-    - Make sure the message starts with the PREFIX (default !)
-    - Make sure you're an admin to use the setup command
-    - Check that Message Content Intent is enabled
+   - Make sure the message starts with the PREFIX (default !)
+   - Make sure you're an admin to use the setup command
+   - Check that Message Content Intent is enabled
 
 #### Reactions aren't working
-    - Make sure the bot has permission to add reactions
-    - Make sure the message ID is correct
-    - Check the console for error messages
+   - Make sure the bot has permission to add reactions
+   - Make sure the message ID is correct
+   - Check the console for error messages
 
 ### Commands
 | Command |	                Usage            |	Description             |
@@ -108,10 +106,9 @@ Edit the PREFIX in your .env file to change the command prefix (default is !).
 |  setup  |	!setup [MessageID] [Emoji] @Role |	Link an emoji to a role |
 
 ### Technologies Used
-
-discord.js - Discord bot framework
-Node.js - JavaScript runtime
-Dotenv - Environment variable management
+   - discord.js - Discord bot framework
+   - Node.js - JavaScript runtime
+   - Dotenv - Environment variable management
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
